@@ -16,6 +16,7 @@ Release Date: 04/18/2016
  
  
 Input:
+
       1. counts: Normalized(e.g. TMM)/raw reads count matrix from sequencing data (row:gene/feature, col:sample) 
                
       2. meta: Meta data matrix containing predictor variables (row:sample, col:predictor)
@@ -25,4 +26,6 @@ Input:
       4. inter: TRUE/FALSE - include/do not include pairwise interactions of predictors
 
 
-Output: a vector of proportions of variation explained by each predictor.
+Output: 
+
+       a vector of proportions of variation explained by each predictor.
