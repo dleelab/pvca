@@ -1,4 +1,4 @@
-##PVCA (Principal Variance Component Analysis)
+##PVCA (Principal Variance Component Analysis) for sequencing read counts
 
 
 Author: Donghyung Lee
