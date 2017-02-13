@@ -7,8 +7,6 @@ Note: The function is written based on the 'pvcaBatchAssess' function of the PVC
 
 Description: Function for Principal Variance Component Analysis
 
-Release Date: 04/18/2016
-
 Input:
 
       1. counts: normalized(e.g. TMM) or log-transformed reads count matrix from sequencing data (row:gene/feature, col:sample) 
