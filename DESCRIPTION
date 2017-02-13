@@ -1,7 +1,7 @@
 Package: pvca
 Title: R package for principal variance component analysis
 Version: 0.1.0
-Authors@R: Donghyung Lee <dustorm@gmail.com>
+Author: Donghyung Lee <dustorm@gmail.com>
 Description: R package for principal variance component analysis
 Depends: R (>= 3.3.2)
 Imports:
