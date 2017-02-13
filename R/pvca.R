@@ -14,7 +14,6 @@
 #' @export
 #'
 
-#library(lme4)
 PVCA <- function(counts, meta, threshold, inter){
 
   counts.center <- t(apply(counts, 1, scale, center=TRUE, scale=FALSE))
@@ -62,7 +61,7 @@ PVCA <- function(counts, meta, threshold, inter){
   for(i in 1:npc.in){
     dat <- cbind(eigen.mat[,i],meta)
     colnames(dat) <- c("pc",colnames(meta))
-    Rm1ML <- lmer(formula, dat, REML = TRUE, verbose = FALSE, na.action = na.omit)
+    Rm1ML <- lme4::lmer(formula, dat, REML = TRUE, verbose = FALSE, na.action = na.omit)
     var.vec <- unlist(VarCorr(Rm1ML))
     ran.var.mat <- rbind(ran.var.mat, c(var.vec[pred.list], resid = sigma(Rm1ML)^2))
   }
